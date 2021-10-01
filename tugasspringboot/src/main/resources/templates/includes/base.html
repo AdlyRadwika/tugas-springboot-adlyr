@@ -1,0 +1,32 @@
+<html 
+    xmlns:th="http://www.thymeleaf.org"	>
+    <head th:fragment="css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link th:href="@{/css/main.css}" rel="stylesheet" />
+        <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+        <title>Hello, world!</title>
+    </head>
+    <body>
+
+        <div class="container mt-5" th:fragment="head-content">
+            <h1 class="mt-5 ">Tugas Spring Boot - Adly Radwika</h1>
+            <p class="lead mb-5">Program sederhana CRUD Inventory menggunakan Spring Boot.<br/>
+        </div>
+
+        <footer th:fragment="footer" class="footer ">
+            <div class="container ">
+                <small>Template thanks to Pak Hudya and edited by Adly Radwika.</small>
+            </div>
+        </footer>
+
+
+        <div th:fragment="scripts">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        </div>
+    </body>
+</html>
